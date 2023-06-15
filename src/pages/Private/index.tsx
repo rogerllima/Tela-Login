@@ -1,24 +1,24 @@
 import { useState } from "react";
 import { StyledButton } from "./styles"
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import { useAuthContext } from "../../contexts/AuthContext";
 
 const Private = () => {
-  const [loggedIn, setLoggedIn] = useState(false);
-
+  const auth = useAuthContext();
 
   const handleLogOut = () => {
-    setLoggedIn(false);
-    console.log(loggedIn);
-
+    auth.setLoggedIn(false);
+    localStorage.removeItem('logged');
   }
 
   return (
     <div>
       Private
-      <StyledButton onClick={handleLogOut}>
-        Logout
-      </StyledButton>
-      {<Link to='/signup' />}
+      <NavLink to="/home">
+        <StyledButton onClick={handleLogOut}>
+          Logout
+        </StyledButton>
+      </NavLink>
     </div>
 
   )

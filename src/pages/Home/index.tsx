@@ -11,7 +11,7 @@ const Home = () => {
         <NavLink to='/signup'>
           <S.Button>Criar Conta</S.Button>
         </NavLink>
-        <NavLink to='/login'>
+        <NavLink to='/private'>
           <S.Button>Login</S.Button>
         </NavLink>
       </div>

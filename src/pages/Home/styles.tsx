@@ -40,7 +40,9 @@ export const Container = styled.div`
 
 export const StyledHeader = styled.header`
   padding: 10px;
-  text-align: center;
+    
+  border: none;
+  border-radius: 5px;
 
   background: black;
 

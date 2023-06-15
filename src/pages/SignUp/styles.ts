@@ -11,11 +11,20 @@ export const Container = styled.div`
 
 `
 
+export const StyledInput = styled.input `
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+`
+
 export const Form = styled.form`  
   background-color: #f4f4f4;
 
   display: flex;
   flex-direction: column;
+  align-items:center;
 
   padding: 20px;
   border-radius: 5px;
@@ -30,6 +39,31 @@ export const StyledButton = styled.button`
 
   padding: 10px;
   margin-top: 10px;
+
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity:0.7;
+  &:disabled {
+    opacity: 0.5;
+  }
+  &:enabled {
+    opacity: 1.0;
+  }
+  &:hover{
+    opacity: 1;
+    transition: opacity 1s easeInOut 0s;
+  } ;
+`
+export const StyledBackButton = styled.button`
+  background-color: #eb1010;
+  color: white;
+
+  width:100px;
+  height:40px;
+
+  padding: 10px;
+  margin: 10px 50px;
 
   border: none;
   border-radius: 5px;
