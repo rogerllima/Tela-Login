@@ -1,7 +1,7 @@
 import React, {useState } from 'react'
 import * as S from './styles'
 
-const SingUp = () => {
+export const SingUp = () => {
 
   const [nome, setNome] = useState('');
   const [email, setEmail] = useState('');
