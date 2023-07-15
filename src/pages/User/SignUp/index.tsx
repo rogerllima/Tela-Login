@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import * as S from './styles'
-import { User } from '../../types/User';
+import { User } from '../../../types/User';
 import { NavLink } from 'react-router-dom';
 
 export const SingUp = () => {

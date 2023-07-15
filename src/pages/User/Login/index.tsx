@@ -1,8 +1,8 @@
 import { useState } from "react"
 import * as S from './styles'
 import { NavLink } from 'react-router-dom'
-import { User } from "../../types/User";
-import { useAuthContext } from "../../contexts/AuthContext";
+import { User } from "../../../types/User";
+import { useAuthContext } from "../../../contexts/Auth/AuthContext";
 
 export const Login = () => {
     const [email, setEmail] = useState('');
