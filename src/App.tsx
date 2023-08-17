@@ -5,9 +5,9 @@ import { AuthProvider } from './contexts/Auth/AuthProvider'
 const App = () => {
     return (
         <>
+        <GlobalStyle />
             <AuthProvider>
                 <RoutesApp />
-                <GlobalStyle />
             </AuthProvider>
         </>)
 }

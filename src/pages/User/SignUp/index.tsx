@@ -26,11 +26,11 @@ export const SingUp = () => {
 
   return (
     <S.Container>
-      <h2>Cadastrar Usuário </h2>
       <S.Form onSubmit={handleCreate}>
-        <S.StyledInput type="text" value={nome} onChange={(e) => setNome(e.target.value)} placeholder="Digite seu nome" />
-        <S.StyledInput type="text" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Digite seu e-mail" />
-        <S.StyledInput type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Digite sua senha" />
+      <h2>Cadastrar Usuário </h2>
+        <S.StyledInput type="text" value={nome} onChange={(e) => setNome(e.target.value)} placeholder="Nome" />
+        <S.StyledInput type="text" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="E-mail" />
+        <S.StyledInput type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Senha" />
         <S.StyledButton type='submit' disabled={!email || !password}>Cadastrar Usuário</S.StyledButton>
         <NavLink to='/home'>
           <S.StyledBackButton>Voltar</S.StyledBackButton>

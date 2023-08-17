@@ -1,21 +1,32 @@
-import { NavLink } from "react-router-dom"
 import * as S from './styles'
+import img from '../../../images/logo-pix-png-icone-520x520.png'
 
 const Home = () => {
   return (
     <S.Container>
-      <S.StyledHeader>
-        Home
-      </S.StyledHeader>
-      <div>
-        <NavLink to='/signup'>
-          <S.Button>Criar Conta</S.Button>
-        </NavLink>
-        <NavLink to='/private'>
-          <S.Button>Login</S.Button>
-        </NavLink>
-      </div>
-
+      <S.ul>
+      <S.img src={img}></S.img>
+        <S.Li>
+          <S.NavLink to='/singup'>
+            <h1>Criar Conta</h1>
+          </S.NavLink>
+        </S.Li>
+        <S.Li>
+          <S.NavLink to='/private'>
+            <h1>Login</h1>
+          </S.NavLink>
+        </S.Li>
+        <S.Li>
+        <S.NavLink to='/signup'>
+            <h1>Planos</h1>
+          </S.NavLink>
+        </S.Li>
+        <S.Li>
+        <S.NavLink to='/signup'>
+            <h1>Controles de Investimentos</h1>
+          </S.NavLink>
+        </S.Li>
+      </S.ul>
     </S.Container>
   )
 }

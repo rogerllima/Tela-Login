@@ -1,52 +1,45 @@
 import { styled } from "styled-components";
+import { Link } from "react-router-dom";
 
-export const Button = styled.button`
-  background-color: gray;
-  color: white;
-  padding: 20px;
-  margin:0 15px;
-  gap:10px;
 
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  opacity:0.7;
-  &:disabled {
-    opacity: 0.5;
-  }
-  &:enabled {
-    opacity: 1.0;
-  }
-  &:hover{
-    opacity: 1;
-    transition: opacity 1s easeInOut 0s;
-  } ;
-`;
+export const ul = styled.ul`
+  display: flex;
+  color: #ffffff;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 20px 15px;
+  gap: 35px;
+  align-items: center;
+  height: 12vh;
+`
+export const img = styled.img`
+  height: 12vh;
+  margin-right: 50px;
+`
+
+export const Li = styled.li`
+  color: #ffffff;
+  display: inline;
+  margin-left: 40px;
+`
 
 export const Container = styled.div`
-  
-  display:flex;
-  align-items:center;
-  flex-direction: column;
-  justify-content: center;
-
-  font-size: 40px;
-
-  width: 100vw;
-  height: 100vh;
+  opacity: 1;
+  transition: all .3s ease-in-out 0s;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 
 `
 
+export const NavLink = styled(Link)`
+  color:#645757;
+  &:hover{
+  opacity: 1;
+  transition: opacity 1s easeInOut 0s;
+  color: #000000ca
+}
 
-export const StyledHeader = styled.header`
-  padding: 10px;
-    
-  border: none;
-  border-radius: 5px;
+`
 
-  background: black;
-
-  color: white;
-  font-size: 40px;
-  }
-  `

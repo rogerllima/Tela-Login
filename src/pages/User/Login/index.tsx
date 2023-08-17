@@ -35,11 +35,11 @@ export const Login = () => {
 
     return (
         <S.Container>
-            <h2>Login </h2>
             <S.Form >
-                <S.StyledInput type="text" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Digite seu e-mail" />
+                <h2>Login </h2>
+                <S.StyledInput type="text" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="E-mail" />
 
-                <S.StyledInput type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Digite sua senha" />
+                <S.StyledInput type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Senha" />
                 <NavLink to='/private'>
                     <S.StyledButton onClick={handleLogin}>Login</S.StyledButton>
                 </NavLink>

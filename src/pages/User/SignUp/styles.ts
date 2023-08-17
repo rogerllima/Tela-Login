@@ -30,7 +30,7 @@ export const Form = styled.form`
   border-radius: 5px;
   
   gap:10px;
-  width: 50%;
+  width: 30%;
 `;
 
 export const StyledButton = styled.button`

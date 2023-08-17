@@ -12,17 +12,20 @@ export const Container = styled.div`
 `
 
 export const Form = styled.form`  
-  max-width: 500px;
-  padding: 10px 20px;
-  background: #f4f7f8;
-  margin: 10px auto;
-  padding: 20px;
-  background: #f4f7f8;
-  border-radius: 8px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+background-color: #f4f4f4;
+
+display: flex;
+flex-direction: column;
+align-items:center;
+
+padding: 20px;
+border-radius: 5px;
+
+gap:10px;
+width: 30%;
 `;
 
-export const StyledInput = styled.input `
+export const StyledInput = styled.input`
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
@@ -31,7 +34,7 @@ export const StyledInput = styled.input `
 `
 
 export const StyledButton = styled.button`
-  background-color: #4caf50;
+  background-color: #4caf4fc3;
   color: white;
 
   width:100px;
@@ -53,12 +56,14 @@ export const StyledButton = styled.button`
   &:hover{
     opacity: 1;
     transition: opacity 1s easeInOut 0s;
+    background-color: #4caf4f;
+
   } ;
 `
 
 export const StyledBackButton = styled.button`
-  background-color: #eb1010;
   color: white;
+  background-color: #eb1010b9;
 
   width:100px;
   height:50px;
@@ -79,5 +84,6 @@ export const StyledBackButton = styled.button`
   &:hover{
     opacity: 1;
     transition: opacity 1s easeInOut 0s;
+    background-color: #eb1010ea;
   } ;
 `
